@@ -13,8 +13,6 @@ def selection_sort(arr):
                 smallest_index = j
         arr[cur_index], arr[smallest_index] = arr[smallest_index], arr[smallest_index]
 
-
-
         # TO-DO: swap
         # Your code here
 
@@ -54,6 +52,16 @@ What is the time and space complexity of the counting sort algorithm?
 '''
 def counting_sort(arr, maximum=None):
     # Your code here
+    buckets = [0 for num in range(maximum + 1)]
+    output = [0 for num in range(len(arr))]
 
+    for num in arr:
+        buckets[num] +=1
+
+    # for i in range(maximum):
+    #     buckets[i] += buckets
+
+    for i in range(len(buckets)):
+        output[i] = bucket[]
 
     return arr

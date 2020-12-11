@@ -11,7 +11,7 @@ def selection_sort(arr):
         for j in range(cur_index, len(arr)):
             if arr[j] < arr[smallest_index]:
                 smallest_index = j
-        arr[cur_index], arr[smallest_index] = arr[smallest_index], arr[smallest_index]
+        arr[cur_index], arr[smallest_index] = arr[smallest_index], arr[cur_index]
 
         # TO-DO: swap
         # Your code here
@@ -61,7 +61,7 @@ def counting_sort(arr, maximum=None):
     # for i in range(maximum):
     #     buckets[i] += buckets
 
-    for i in range(len(buckets)):
-        output[i] = bucket[]
+    # for i in range(len(buckets)):
+    #     output[i] = buckets[i]
 
     return arr
